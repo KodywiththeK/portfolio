@@ -1,8 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
-import letterK from '../../public/images/letterK.png'
-import Image from 'next/image'
+import NavigationBar from '@/components/NavigationBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="bg-white text-black dark:bg-[#111010] dark:text-white ">
+    <html lang="en" className="bg-[#fafafa] text-neutral-700 dark:bg-[#0a0a0a] dark:text-neutral-300 ">
       <body className={`${inter.className} mx-10 mb-40 mt-16 flex max-w-4xl flex-col antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-32`}>
         <aside className="-mx-4 border-b-[0.5px] border-b-neutral-500 font-serif md:mx-0 md:w-[150px] md:flex-shrink-0 md:border-b-0 md:px-0">
           <div className="lg:sticky lg:top-20">
@@ -27,22 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </svg>
               </Link>
             </div>
-            <nav className="fade relative flex scroll-pr-6 flex-row items-start px-4 pb-0 md:relative md:flex-col md:overflow-auto md:px-0">
-              <div className="mb-2 mt-2 flex flex-row space-x-0 pr-10 text-[16px] md:mt-0 md:flex-col md:gap-2 md:text-[18px]">
-                <Link href={'/'} className="flex rounded align-middle font-bold transition-all hover:bg-neutral-200 dark:hover:bg-neutral-800">
-                  <span className="relative px-[10px] py-[5px] opacity-60 transition-all hover:opacity-100">home</span>
-                </Link>
-                <Link href={'/about'} className="flex rounded align-middle font-bold transition-all hover:bg-neutral-200 dark:hover:bg-neutral-800">
-                  <span className="relative px-[10px] py-[5px] opacity-60 transition-all hover:opacity-100">about</span>
-                </Link>
-                <Link href={'/contact'} className="flex rounded align-middle font-bold transition-all hover:bg-neutral-200 dark:hover:bg-neutral-800">
-                  <span className="relative px-[10px] py-[5px] opacity-60 transition-all hover:opacity-100">contact</span>
-                </Link>
-                <Link href={'/projects'} className="flex rounded align-middle font-bold transition-all hover:bg-neutral-200 dark:hover:bg-neutral-800">
-                  <span className="relative px-[10px] py-[5px] opacity-60 transition-all hover:opacity-100">projects</span>
-                </Link>
-              </div>
-            </nav>
+            <NavigationBar />
           </div>
         </aside>
         <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:mt-0 md:px-0">{children}</main>

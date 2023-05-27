@@ -1,16 +1,15 @@
-import { getProjects } from '@/service/projects'
+import { getProjects, ProjectType } from '@/service/projects'
 import Image from 'next/image'
 import Link from 'next/link'
 import profile from '../../public/images/profile.jpg'
-
-console.log(new Date('2023-02-17').toDateString())
+import ProjectCards from './ProjectCards'
 
 export default async function Home() {
   const mainProjects = (await getProjects()).filter((i) => i.main)
 
   return (
     <section>
-      <h1 className="mb-8 font-serif text-3xl font-semibold tracking-tight">{'Kody Dongseong Kim'}</h1>
+      <h1 className="mb-8 font-serif text-3xl font-bold tracking-tight text-black dark:text-white">{'Kody Dongseong Kim'}</h1>
       <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
         <span>{'안녕하세요. '}</span>
         <b>{'프론트엔드 개발자 '}</b>
@@ -43,24 +42,8 @@ export default async function Home() {
       <div>
         <h2 className="mb-6 mt-10 font-serif text-2xl font-semibold">Main Projects</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {mainProjects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`} className="max-w-[450px] rounded-lg border-[0.8px] bg-white text-center transition-all hover:drop-shadow-xl dark:border-neutral-200 dark:bg-[#111010]">
-              <div className="flex flex-col">
-                <Image src={`/images/${project.image}`} alt={project.title} width={450} height={450} className="aspect-video rounded-lg object-cover" />
-                <div className="dark:text-neutral-200] p-2 text-[14px]">
-                  <div className="text-right opacity-60">{`${project.started} ~ ${project.ended}`}</div>
-                  <h3 className="text-[18px] font-semibold">{project.title}</h3>
-                  <div className="font-semibold">{project.description}</div>
-                  <div className="flex flex-wrap justify-center gap-2 p-2">
-                    {project.tools.map((tool) => (
-                      <div key={tool} className="py-.5 rounded-xl bg-neutral-200 px-2 dark:bg-neutral-700">
-                        {tool}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Link>
+          {mainProjects.map((project: ProjectType) => (
+            <ProjectCards key={project.id} project={project} />
           ))}
         </div>
       </div>
