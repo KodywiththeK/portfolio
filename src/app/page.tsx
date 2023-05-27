@@ -1,7 +1,6 @@
 import { getProjects, ProjectType } from '@/service/projects'
 import Image from 'next/image'
 import Link from 'next/link'
-import profile from '/public/images/profile.jpg'
 import ProjectCards from './ProjectCards'
 
 export default async function Home() {
@@ -22,7 +21,7 @@ export default async function Home() {
         <span>사람들의 일상속 스미는, 선한 영향력을 만드는 개발자를 꿈꿉니다.</span>
       </p>
       <div className="my-8 flex flex-col items-start md:flex-row md:items-center">
-        <Image src={profile} alt={'profile'} width={120} height={120} className="rounded-full" />
+        <Image src={'/images/profile.png'} alt={'profile'} width={120} height={120} className="rounded-full" />
         <div className="ml-0 mt-8 space-y-2 text-neutral-500 dark:text-neutral-400 md:ml-6 md:mt-0">
           <Link href={'https://github.com/KodywiththeK'} className="flex items-center gap-2 hover:underline">
             <b>{'Gihub: '}</b>
