@@ -1,7 +1,7 @@
 import { getProjects, ProjectType } from '@/service/projects'
 import Image from 'next/image'
 import Link from 'next/link'
-import profile from '../../public/images/profile.jpg'
+import profile from '/public/images/profile.jpg'
 import ProjectCards from './ProjectCards'
 
 export default async function Home() {
