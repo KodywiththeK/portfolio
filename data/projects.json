@@ -1,0 +1,35 @@
+[
+  {
+    "id": "reactShop",
+    "title": "Amazon Shop",
+    "description": "🛒 React e-commercial 플랫폼",
+    "started": "2023-02-07",
+    "ended": "2023-02-15",
+    "image": "reactShop.png",
+    "tools": ["React", "Typescript", "Redux"],
+    "cooperate": false,
+    "main": true 
+  },
+  {
+    "id": "supArtist",
+    "title": "Sup Artist",
+    "description": "🎥 영상 스태프 전문 구인구직 커뮤니티 플랫폼",
+    "started": "2023-02-20",
+    "ended": "2023-03-17",
+    "image": "supArtist.png",
+    "tools": ["React", "Typescript", "Recoil", "TanstackQuery", "Firebase"],
+    "cooperate": false,
+    "main": true
+  },
+  {
+    "id": "myLittleForest",
+    "title": "My Little Forest",
+    "description": "🌿 깃허브를 활용한 개발자 커뮤니티 플랫폼",
+    "started": "2023-03-24",
+    "ended": "2023-05-03",
+    "image": "myLittleForest.png",
+    "tools": ["React", "Typescript", "Recoil", "TanstackQuery", "Firebase", "StompJS"],
+    "cooperate": true,
+    "main": true
+  }
+]
