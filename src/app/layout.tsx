@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="bg-[#fafafa] text-neutral-700 dark:bg-[#0a0a0a] dark:text-neutral-300 ">
-      <body className={`${inter.className} mx-10 mb-40 mt-16 flex max-w-4xl flex-col antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-32`}>
+      <body className={`${inter.className} mx-3 mb-40 mt-16 flex max-w-4xl flex-col antialiased sm:mx-8 md:mt-20 md:flex-row lg:mx-auto lg:mt-32`}>
         <aside className="-mx-4 border-b-[0.5px] border-b-neutral-500 font-serif md:mx-0 md:w-[150px] md:flex-shrink-0 md:border-b-0 md:px-0">
           <div className="lg:sticky lg:top-20">
             <div className="mb-2 ml-2 flex flex-col items-start px-4 md:mb-8 md:ml-[12px] md:flex-row md:px-0 ">
