@@ -11,7 +11,7 @@ export default function ContactPage() {
       <h1 className="mb-8 font-serif text-3xl font-bold tracking-tight text-black dark:text-white">{'Contact'}</h1>
       <h2 className="mb-4 font-serif text-[22px] font-bold tracking-tight text-black dark:text-white">Email me</h2>
       <SendMail />
-      <h2 className="mb-4 font-serif text-[22px] font-bold tracking-tight text-black dark:text-white">Channel</h2>
+      <h2 className="mb-4 font-serif text-[22px] font-bold tracking-tight text-black dark:text-white">My Channel</h2>
       <div className="mb-8 flex flex-col gap-2 md:flex-row md:gap-2">
         <Link href={'https://github.com/KodywiththeK'} className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900">
           <div className="flex items-center">

@@ -11,14 +11,16 @@ export default async function Home() {
       <h1 className="mb-8 font-serif text-3xl font-bold tracking-tight text-black dark:text-white">{'Kody Dongseong Kim'}</h1>
       <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
         <span>{'안녕하세요. '}</span>
-        <b>{'프론트엔드 개발자 '}</b>
-        <span>{'김동성(Kody)입니다.'}</span>
+        <b>{'프론트엔드 개발자 김동성(Kody)'}</b>
+        <span>{'입니다.'}</span>
         <br />
         <span>주로</span>
-        <b>{' React, Typescript를 기반으로 개발'}</b>
-        <span>하고 있습니다.</span>
+        <b>{' React, Typescript'}</b>
+        <span>를 기반으로 개발하고 있습니다.</span>
         <br />
-        <span>사람들의 일상속 스미는, 선한 영향력을 만드는 개발자를 꿈꿉니다.</span>
+        <span>
+          사람들의 일상속 스미는, <b>선한 영향력</b>을 만드는 개발자를 꿈꿉니다.
+        </span>
       </p>
       <div className="my-8 flex flex-col items-start md:flex-row md:items-center">
         <Image src={'/images/profile.png'} alt={'profile'} width={120} height={120} className="rounded-full" />

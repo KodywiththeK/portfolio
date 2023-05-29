@@ -2,7 +2,6 @@
 import { sendContactEmail } from '@/service/contact'
 import { EmailData } from '@/utils/nodemailer'
 import { validateData } from '@/utils/validation'
-// import { validateData } from '@/utils/validation'
 import React, { useState } from 'react'
 
 export default function SendMail() {
@@ -16,6 +15,9 @@ export default function SendMail() {
   const errorHandler = (error: string) => {
     if (typeof error === 'string' && error.includes('valid email address.')) {
       setErr('❗️ 올바른 형식의 메일 주소를 입력해주세요.')
+    }
+    if (typeof error === 'string' && error.includes('메일 전송에 실패함')) {
+      setErr('❗️ 메일 전송에 실패했습니다.')
     } else {
       setErr('✅ 메일을 성공적으로 전송했습니다.')
     }
@@ -30,7 +32,8 @@ export default function SendMail() {
       const res = await validateData(mailData)
       if (res === true) {
         const result = await sendContactEmail(mailData)
-        errorHandler(result)
+        if (result.message === '메일 전송에 실패함') errorHandler('메일 전송에 실패함')
+        else errorHandler(result)
       } else {
         errorHandler(res as string)
       }
@@ -43,7 +46,7 @@ export default function SendMail() {
     <div className="mb-8 flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 dark:bg-neutral-700 sm:p-7 md:p-10">
       {err && err.length > 0 && <div className={`my-2 rounded-lg ${err.includes('성공') ? 'bg-green-200' : 'bg-red-200'} p-2 font-semibold`}>{err}</div>}
       <div className=" font-semibold">Your Email</div>
-      <input placeholder="Email" type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 focus:outline-none" />
+      <input placeholder="yourEmail@gmail.com" type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 focus:outline-none" />
       <div className=" font-semibold">Title</div>
       <input placeholder="title" type={'text'} value={mailData.subject} onChange={(e) => setMailData({ ...mailData, subject: e.target.value })} className="mb-2 w-full rounded p-2 focus:outline-none" />
       <div className=" font-semibold">Message</div>
