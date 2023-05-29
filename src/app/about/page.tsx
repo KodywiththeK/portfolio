@@ -63,11 +63,11 @@ export default function AboutPage() {
           <div>SCSS, StyledComponent, TailwindCSS</div>
         </li>
       </ul>
-      <div className="my-12 border-b-[0.5px] border-b-neutral-700 opacity-60 dark:border-b-neutral-200" />
+      {/* <div className="my-12 border-b-[0.5px] border-b-neutral-700 opacity-60 dark:border-b-neutral-200" />
       <h2 className="mb-4 font-serif text-[22px] font-bold text-black dark:text-white">Motivation</h2>
       <p className="mb-8">
         오늘날 프로그래밍은 일상에 침투하기 가장 좋은 수단입니다. 무언가 많은 사람들의 일상이 되면, 그것은 하나의 문화가 됩니다. 그것이 선한 문화라면 사람이 사람을 돕게되는 가장 자연스러운 방법일 것입니다. 결국 코딩이 전부가 아닌 그것이 미치는 영향까지 고려하여, <b>좋은 기술로서 사람이 서로 돕는 문화를 만들어가는 것</b>이 제가 꿈꾸는 개발자로서의 삶입니다.
-      </p>
+      </p> */}
     </section>
   )
 }
