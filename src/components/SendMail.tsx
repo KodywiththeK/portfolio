@@ -32,8 +32,7 @@ export default function SendMail() {
       const res = await validateData(mailData)
       if (res === true) {
         const result = await sendContactEmail(mailData)
-        if (result.message === '메일 전송에 실패함') errorHandler('메일 전송에 실패함')
-        else errorHandler(result)
+        console.log(result)
       } else {
         errorHandler(res as string)
       }
