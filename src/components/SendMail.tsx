@@ -13,12 +13,14 @@ export default function SendMail() {
 
   const [err, setErr] = useState('')
   const errorHandler = (error: string) => {
+    console.log(error)
     if (typeof error === 'string' && error.includes('valid email address.')) {
       setErr('❗️ 올바른 형식의 메일 주소를 입력해주세요.')
     }
     if (typeof error === 'string' && error.includes('메일 전송에 실패함')) {
       setErr('❗️ 메일 전송에 실패했습니다.')
-    } else {
+    }
+    if (typeof error === 'string' && error.includes('성공적')) {
       setErr('✅ 메일을 성공적으로 전송했습니다.')
     }
     setTimeout(() => {
@@ -32,12 +34,13 @@ export default function SendMail() {
       const res = await validateData(mailData)
       if (res === true) {
         const result = await sendContactEmail(mailData)
-        console.log(result)
+        errorHandler(result.message)
       } else {
         errorHandler(res as string)
       }
     } catch (err) {
-      console.log(err)
+      errorHandler(String(err))
+      console.error(err)
     }
     setMailData(mailDataInitialState)
   }
