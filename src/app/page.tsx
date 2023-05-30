@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <section>
-      <h1 className="mb-8 font-serif text-3xl font-bold tracking-tight text-black dark:text-white">{'Kody Dongseong Kim'}</h1>
+      <h1 className="mb-8 font-serif text-3xl font-bold tracking-tight text-black dark:text-white">{'Kody Kim'}</h1>
       <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
         <span>{'안녕하세요. '}</span>
         <b>{'프론트엔드 개발자 김동성(Kody)'}</b>

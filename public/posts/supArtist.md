@@ -1,8 +1,14 @@
-- 프로젝트 기간: 2023.02.20 - 03.17
+- **프로젝트 기간**: 2023.02.20 - 03.17
 
-- 배포 링크: [https://beautiful-genie-32ca42.netlify.app/](https://beautiful-genie-32ca42.netlify.app/)
+- **배포 링크**: [🎥 Sup Artist](https://beautiful-genie-32ca42.netlify.app/)
 
-## **Overview**
+- **GitHub**: [https://github.com/KodywiththeK/supArtist](https://github.com/KodywiththeK/supArtist)
+
+- **개발로그 노션링크**: [📄 트러블슈팅 및 자세한 기능 설명 포함](https://invented-song-ea3.notion.site/SupArtist-29b52f7b973746fda95244028a8d6cca)
+
+- **시연 영상**: [SupArtist 시연영상(유튜브)](https://www.youtube.com/watch?v=CzJGwBmNu3M)
+
+## Overview
 
 ### 🎥 영상스태프 전문 구인구직 커뮤니티 플랫폼, Sup-Artist.
 
@@ -20,18 +26,6 @@
 1. 영상 작품 제작자들에게는 좀 더 체계화된 시스템과, 더 나은 인력을 선택할 수 있는 선택권을 주고자 함.
 2. 영상 스태프 구직자들에게 역시 더 나은 작품과 원하는 제작팀과 함께할 수 있는 기회를 제공하고자 함.
 3. 영상 예술에 관심을 가진 더 다양한 사람들에게 작품이 만들어지는 과정을 함께하는 특별한 경험을 할 수 있는 기회를 제공하고자 함.
-
-## github
-
-[https://github.com/KodywiththeK/supArtist](https://github.com/KodywiththeK/supArtist)
-
-## 개발 로그
-
-https://invented-song-ea3.notion.site/SupArtist-f547aa2a26a446b184eebbe3c1d4dbc0
-
-## 시연 영상
-
-[https://www.youtube.com/watch?v=CzJGwBmNu3M](https://www.youtube.com/watch?v=CzJGwBmNu3M)
 
 ## Project
 

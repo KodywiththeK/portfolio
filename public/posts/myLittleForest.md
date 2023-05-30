@@ -1,10 +1,12 @@
-- 프로젝트 기간: 2023.03.24 - 05.03
+- **프로젝트 기간**: 2023.03.24 - 05.03
 
-- 협업 인원: 프론트엔드 2명, 백엔드 4명
+- **협업 인원**: 프론트엔드 2명, 백엔드 4명
 
-- 시연 영상: [🌿 My Little Forest](https://youtu.be/C5DPI5JN3uM)
+- **GitHub**: [https://github.com/BuD2023/BuDFrontend](https://github.com/BuD2023/BuDFrontend)
 
-- 개발로그 노션링크: [트러블 슈팅 및 자세한 기능설명 포함](https://invented-song-ea3.notion.site/My-Little-Forest-b8aea4358c654db08da1d08701da95ea)
+- **시연 영상**: [🌿 My Little Forest](https://youtu.be/C5DPI5JN3uM)
+
+- **개발로그 노션링크**: [트러블 슈팅 및 자세한 기능설명 포함](https://invented-song-ea3.notion.site/My-Little-Forest-b8aea4358c654db08da1d08701da95ea)
 
 ## **Overview**
 

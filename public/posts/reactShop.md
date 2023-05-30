@@ -1,4 +1,8 @@
-- 프로젝트 기간: 2023.02.07 - 02.15
+- **프로젝트 기간**: 2023.02.07 - 02.15
+
+- **배포 링크**: [🛒 Amazon Korea](https://gilded-choux-cce60b.netlify.app/)
+
+- **GitHub**: [https://github.com/KodywiththeK/React-Ts-shoppingMall](https://github.com/KodywiththeK/React-Ts-shoppingMall)
 
 ## 기술 스택
 
@@ -16,13 +20,6 @@
 - styled component를 사용해 모든 디자인과 사용자 UI를 직접 기획하고 구현했습니다.
 - Netlify를 통해 배포했습니다
 
-## github
-
-https://github.com/KodywiththeK/React-Ts-shoppingMall
-
-## 배포 링크
-
-[Amazon Korea](https://gilded-choux-cce60b.netlify.app/)
 
 ## 주요 기능
 

@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -12,7 +13,7 @@ type MarkdownType = {
 
 export default function Markdown({ markdown }: MarkdownType) {
   return (
-    <div>
+    <>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]} // Allows us to have embedded HTML tags in our markdown
         components={{
@@ -31,9 +32,9 @@ export default function Markdown({ markdown }: MarkdownType) {
           h3: ({ children }) => <h3 className={styles.semiheading}>{children}</h3>,
           p: ({ children }) => <p className={styles.paragraph}>{children}</p>,
           a: ({ children, href }) => (
-            <a className={styles.link} href={href}>
+            <Link className={styles.link} href={href as string}>
               {children}
-            </a>
+            </Link>
           ),
           ul: ({ children }) => <ul className={styles.list}>{children}</ul>,
           ol: ({ children }) => <ol className={styles.numberedList}>{children}</ol>,
@@ -41,6 +42,6 @@ export default function Markdown({ markdown }: MarkdownType) {
       >
         {markdown}
       </ReactMarkdown>
-    </div>
+    </>
   )
 }

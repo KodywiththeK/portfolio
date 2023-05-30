@@ -3,7 +3,6 @@ import { getMarkdownFile } from '@/service/markdown'
 import { getOneProject } from '@/service/projects'
 import { redirect } from 'next/navigation'
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
 
 type ProjectDetailPageProps = {
   params: {
