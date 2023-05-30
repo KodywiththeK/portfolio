@@ -24,7 +24,6 @@ export default function Caraousel({ mainProjects }: CaraouselPropsType) {
   }
 
   return (
-    // <div className="w-full  ">
     <Carousel swipeable={true} draggable={true} responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000} showDots={true}>
       {mainProjects.map((project: ProjectType) => (
         <div key={project.id} className="flex h-full justify-center">
@@ -32,6 +31,5 @@ export default function Caraousel({ mainProjects }: CaraouselPropsType) {
         </div>
       ))}
     </Carousel>
-    // </div>
   )
 }

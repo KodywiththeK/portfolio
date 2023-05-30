@@ -9,9 +9,9 @@ interface ProjectCardsPropsType {
 
 export default function ProjectCards({ project }: ProjectCardsPropsType) {
   return (
-    <Link href={`/projects/${project.id}`} className="m-2 max-w-[400px] rounded-xl border-[0.8px] bg-white text-center drop-shadow-xl transition-all hover:scale-[1.03] dark:border-neutral-200 dark:bg-[#111010]">
-      <div className="flex flex-col">
-        <Image src={`/images/${project.image}`} alt={project.title} width={450} height={450} className="aspect-video rounded-lg object-cover" />
+    <Link href={`/projects/${project.id}`} className="m-2 mb-8 max-w-[400px] rounded-xl border-[0.8px] bg-white text-center drop-shadow-xl transition-all hover:scale-[1.03] dark:border-neutral-200 dark:bg-neutral-800">
+      <div className="flex flex-col overflow-hidden">
+        <Image src={`/images/${project.image}`} alt={project.title} width={450} height={450} className="aspect-video rounded-xl object-cover" />
         <div className="dark:text-neutral-200] p-2 text-[14px]">
           <div className="text-right opacity-60">{`${project.started} ~ ${project.ended}`}</div>
           <h3 className="text-[18px] font-semibold">{`${project.title} (${project.cooperate ? '협업' : '개인'})`}</h3>
