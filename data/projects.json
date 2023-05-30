@@ -8,7 +8,7 @@
     "image": "reactShop.png",
     "tools": ["React", "Typescript", "Redux"],
     "cooperate": false,
-    "main": true 
+    "main": false 
   },
   {
     "id": "supArtist",
