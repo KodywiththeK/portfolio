@@ -1,6 +1,7 @@
 import Markdown from '@/components/Markdown'
 import { getMarkdownFile } from '@/service/markdown'
 import { getOneProject } from '@/service/projects'
+import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import React from 'react'
 
@@ -20,6 +21,7 @@ export default async function ProjectDetail({ params: { slug } }: ProjectDetailP
   return (
     <section>
       <h1 className="mb-8 font-serif text-3xl font-bold text-black dark:text-white">{project.title}</h1>
+      <Image src={`/images/${project.image}`} alt={`${project.title}`} width={800} height={500} className="my-4 rounded-xl" />
       <Markdown markdown={markdown} />
     </section>
   )

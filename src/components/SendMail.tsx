@@ -45,16 +45,16 @@ export default function SendMail() {
     setMailData(mailDataInitialState)
   }
   return (
-    <div className="mb-8 flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 dark:bg-neutral-700 sm:p-7 md:p-10">
+    <div className="mb-8 flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 dark:bg-neutral-800 sm:p-7 md:p-10">
       {err && err.length > 0 && <div className={`my-2 rounded-lg ${err.includes('성공') ? 'bg-green-200' : 'bg-red-200'} p-2 font-semibold`}>{err}</div>}
       <div className=" font-semibold">Your Email</div>
-      <input placeholder="yourEmail@gmail.com" type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 focus:outline-none" />
+      <input placeholder="yourEmail@gmail.com(필수)" type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className=" font-semibold">Title</div>
-      <input placeholder="title" type={'text'} value={mailData.subject} onChange={(e) => setMailData({ ...mailData, subject: e.target.value })} className="mb-2 w-full rounded p-2 focus:outline-none" />
+      <input placeholder="제목을 입력해주세요(필수)" type={'text'} value={mailData.subject} onChange={(e) => setMailData({ ...mailData, subject: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className=" font-semibold">Message</div>
-      <textarea name="message" placeholder="message" value={mailData.message} onChange={(e) => setMailData({ ...mailData, message: e.target.value })} className="mb-2 h-[200px] w-full rounded p-2 focus:outline-none" />
+      <textarea name="message" placeholder="보내질 메세지를 입력해주세요(필수)" value={mailData.message} onChange={(e) => setMailData({ ...mailData, message: e.target.value })} className="mb-2 h-[200px] w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className="flex justify-end">
-        <button disabled={mailData.from.length === 0 || mailData.message.trim().length === 0 || mailData.subject.trim().length === 0} onClick={onClickHandler} className="w-[100px] rounded-lg bg-neutral-300 py-2 text-center text-[18px] font-semibold disabled:opacity-50">
+        <button disabled={mailData.from.length === 0 || mailData.message.trim().length === 0 || mailData.subject.trim().length === 0} onClick={onClickHandler} className="w-[100px] rounded-lg bg-neutral-200 py-2 text-center text-[18px] font-semibold disabled:opacity-50 dark:bg-neutral-600">
           Send
         </button>
       </div>

@@ -1,3 +1,4 @@
+import Caraousel from '@/components/Caraousel'
 import { getProjects, ProjectType } from '@/service/projects'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -42,10 +43,11 @@ export default async function Home() {
       </div>
       <div>
         <h2 className="mb-6 mt-10 font-serif text-2xl font-semibold">Main Projects</h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {mainProjects.map((project: ProjectType) => (
+        <Caraousel mainProjects={mainProjects} />
+        <div className="flex w-full bg-green-100">
+          {/* {mainProjects.map((project: ProjectType) => (
             <ProjectCards key={project.id} project={project} />
-          ))}
+          ))} */}
         </div>
       </div>
     </section>

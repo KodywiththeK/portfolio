@@ -27,7 +27,7 @@ export default function FilteredProjects({ projects }: FilterPropsType) {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
         {result.map((project: ProjectType) => (
           <ProjectCards key={project.id} project={project} />
         ))}

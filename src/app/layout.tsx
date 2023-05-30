@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="bg-[#fafafa] text-neutral-700 dark:bg-[#0a0a0a] dark:text-neutral-300 ">
       <body className={`${inter.className} mx-3 mb-40 mt-16 flex max-w-4xl flex-col antialiased sm:mx-8 md:mt-20 md:flex-row lg:mx-auto lg:mt-32`}>
         <aside className="-mx-4 border-b-[0.5px] border-b-neutral-500 font-serif md:mx-0 md:w-[150px] md:flex-shrink-0 md:border-b-0 md:px-0">
-          <div className="lg:sticky lg:top-20">
+          <div className="md:sticky md:top-20">
             <div className="mb-2 ml-2 flex flex-col items-start px-4 md:mb-8 md:ml-[12px] md:flex-row md:px-0 ">
               <Link href="/">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" className="aspect-square w-[45px] dark:fill-white md:w-[60px]" viewBox="0 0 1280.000000 1201.000000" preserveAspectRatio="xMidYMid meet">
