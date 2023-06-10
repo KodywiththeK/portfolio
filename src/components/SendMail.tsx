@@ -1,7 +1,6 @@
 'use client'
 import { sendContactEmail } from '@/service/contact'
 import { EmailData } from '@/utils/nodemailer'
-import { validateData } from '@/utils/validation'
 import React, { useState } from 'react'
 
 export default function SendMail() {
@@ -11,42 +10,29 @@ export default function SendMail() {
     message: '',
   }
 
-  const [err, setErr] = useState('')
-  const errorHandler = (error: string) => {
-    console.log(error)
-    if (typeof error === 'string' && error.includes('valid email address.')) {
-      setErr('❗️ 올바른 형식의 메일 주소를 입력해주세요.')
-    }
-    if (typeof error === 'string' && error.includes('메일 전송에 실패함')) {
-      setErr('❗️ 메일 전송에 실패했습니다.')
-    }
-    if (typeof error === 'string' && error.includes('성공적')) {
-      setErr('✅ 메일을 성공적으로 전송했습니다.')
-    }
-    setTimeout(() => {
-      setErr('')
-    }, 3000)
-  }
-
+  const [banner, setBanner] = useState<{ message: string; state: 'success' | 'error' | 'loading' } | null>(null)
   const [mailData, setMailData] = useState<EmailData>(mailDataInitialState)
-  const onClickHandler = async () => {
-    try {
-      const res = await validateData(mailData)
-      if (res === true) {
-        const result = await sendContactEmail(mailData)
-        errorHandler(result.message)
-      } else {
-        errorHandler(res as string)
-      }
-    } catch (err) {
-      errorHandler(String(err))
-      console.error(err)
-    }
-    setMailData(mailDataInitialState)
+  const onClickHandler = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault()
+    setBanner({ message: '💌 메일을 전송중입니다.', state: 'loading' })
+    sendContactEmail(mailData)
+      .then((res) => {
+        setBanner({ message: `✅ ${res.message}`, state: 'success' })
+        setMailData(mailDataInitialState)
+      })
+      .catch((res) => {
+        setBanner({ message: `❗️ ${res.message}`, state: 'error' })
+      })
+      .finally(() => {
+        setTimeout(() => {
+          setBanner(null)
+        }, 3000)
+      })
   }
   return (
     <div className="mb-8 flex w-full flex-col gap-2 rounded-md bg-neutral-200 p-4 dark:bg-neutral-800 sm:p-7 md:p-10">
-      {err && err.length > 0 && <div className={`my-2 rounded-lg ${err.includes('성공') ? 'bg-green-200' : 'bg-red-200'} p-2 font-semibold`}>{err}</div>}
+      {banner && banner.state !== 'loading' && <div className={`my-2 rounded-lg ${banner.state === 'success' ? 'bg-green-300' : 'bg-red-200'} p-2 font-semibold`}>{banner.message}</div>}
+      {banner && banner.state === 'loading' && <div className={`my-2 rounded-lg bg-yellow-300 p-2 font-semibold`}>{banner.message}</div>}
       <div className=" font-semibold">Your Email</div>
       <input placeholder="yourEmail@gmail.com(필수)" type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className=" font-semibold">Title</div>

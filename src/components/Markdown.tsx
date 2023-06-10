@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
@@ -38,6 +39,7 @@ export default function Markdown({ markdown }: MarkdownType) {
           ),
           ul: ({ children }) => <ul className={styles.list}>{children}</ul>,
           ol: ({ children }) => <ol className={styles.numberedList}>{children}</ol>,
+          img: (image) => <Image className="rounded-xl shadow-lg" src={image?.src || ''} alt={image?.alt || ''} width={800} height={600} />,
         }}
       >
         {markdown}
