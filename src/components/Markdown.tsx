@@ -29,7 +29,7 @@ export default function Markdown({ markdown }: MarkdownType) {
             )
           },
           h1: ({ children }) => <h1 className={styles.heading}>{children}</h1>,
-          h2: ({ children }) => <h2 className={`${styles.subheading} bg-neutral-300 dark:bg-neutral-600`}>{children}</h2>,
+          h2: ({ children }) => <h2 className={`${styles.subheading} bg-neutral-300`}>{children}</h2>,
           h3: ({ children }) => <h3 className={styles.semiheading}>{children}</h3>,
           p: ({ children }) => <p className={styles.paragraph}>{children}</p>,
           a: ({ children, href }) => (

@@ -21,7 +21,7 @@ export default async function ProjectDetail({ params: { slug } }: ProjectDetailP
   return (
     <section>
       <h1 className="mb-8 font-serif text-3xl font-bold text-black dark:text-white">{project.title}</h1>
-      <article className="overflow-hidden rounded-2xl bg-neutral-100 p-2 shadow-lg">
+      <article className="overflow-hidden rounded-2xl bg-neutral-100 p-2 text-black shadow-lg">
         <Image src={`/images/${project.image}`} alt={`${project.title}`} width={800} height={500} className="my-4 rounded-xl shadow-lg" />
         <Markdown markdown={markdown} />
       </article>

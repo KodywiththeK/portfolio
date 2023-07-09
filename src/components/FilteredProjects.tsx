@@ -22,7 +22,7 @@ export default function FilteredProjects({ projects }: FilterPropsType) {
     <>
       <div className="mb-8 flex flex-wrap gap-2">
         {categories.map((category, index) => (
-          <button onClick={() => onClickHandler(category)} key={index} className={`${filter.includes(category) ? 'bg-neutral-200 dark:bg-neutral-700' : 'bg-neutral-100 dark:bg-neutral-800'} rounded-xl  px-3 py-1.5 font-semibold transition-all hover:bg-neutral-200  dark:hover:bg-neutral-700`}>
+          <button onClick={() => onClickHandler(category)} key={index} className={`${filter.includes(category) ? 'bg-neutral-400 dark:bg-neutral-400' : 'bg-neutral-200 dark:bg-neutral-700'} rounded-xl  px-3 py-1.5 font-semibold transition-all hover:bg-neutral-200  dark:hover:bg-neutral-700`}>
             {category}
           </button>
         ))}

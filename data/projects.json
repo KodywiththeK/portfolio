@@ -1,23 +1,12 @@
 [
   {
-    "id": "reactShop",
-    "title": "Amazon Shop",
-    "description": "🛒 React e-commercial 플랫폼",
-    "started": "2023-02-07",
-    "ended": "2023-02-15",
-    "image": "reactShop.png",
-    "tools": ["React", "Typescript", "Redux"],
-    "cooperate": false,
-    "main": true 
-  },
-  {
-    "id": "supArtist",
-    "title": "Sup Artist",
-    "description": "🎥 영상 스태프 전문 구인구직 커뮤니티 플랫폼",
-    "started": "2023-02-20",
-    "ended": "2023-03-17",
-    "image": "supArtist.png",
-    "tools": ["React", "Typescript", "Recoil", "TanstackQuery", "Firebase"],
+    "id": "kodistagram",
+    "title": "Kodistagram",
+    "description": "🌠 Next.js 활용한 소셜네트워크 서비스",
+    "started": "2023-06-23",
+    "ended": "2023-07-06",
+    "image": "kodistagram.png",
+    "tools": ["React", "Typescript", "NextJS", "SWR", "Sanity", "Next-auth"],
     "cooperate": false,
     "main": true
   },
@@ -31,5 +20,27 @@
     "tools": ["React", "Typescript", "Recoil", "TanstackQuery", "Firebase", "StompJS"],
     "cooperate": true,
     "main": true
+  },
+  {
+    "id": "supArtist",
+    "title": "Sup Artist",
+    "description": "🎥 영상 스태프 전문 구인구직 커뮤니티 플랫폼",
+    "started": "2023-02-20",
+    "ended": "2023-03-17",
+    "image": "supArtist.png",
+    "tools": ["React", "Typescript", "Recoil", "TanstackQuery", "Firebase"],
+    "cooperate": false,
+    "main": true
+  },
+  {
+    "id": "reactShop",
+    "title": "Amazon Shop",
+    "description": "🛒 React e-commercial 플랫폼",
+    "started": "2023-02-07",
+    "ended": "2023-02-15",
+    "image": "reactShop.png",
+    "tools": ["React", "Typescript", "Redux"],
+    "cooperate": false,
+    "main": false 
   }
 ]

@@ -32,22 +32,30 @@
 
 ## Project
 
-### ⚙ 프로젝트 아키텍쳐
-
----
-
-![title](https://invented-song-ea3.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fbefff80f-efe7-4bae-ba7e-ab53c06ff54f%2Fbud-success.drawio.png?id=340225a0-7051-41b9-904f-fc83e17ab8ec&table=block&spaceId=18a88457-e512-4cdc-adbf-d1fdfb29ae1d&width=2000&userId=&cache=v2)   
-
-
-
 
 ### 🔗 담당 개발 주요 기능
 ---
-- 회원기능: Github OAuth 2.0 소셜 로그인, JWT 사용자 인증
-- 검색기능: 텍스트 검색, 음성검색, 정렬, 필터링
-- 커뮤니티: 게시글 CRUD, 좋아요, 게시글 스크랩, 댓글 및 대댓글, 댓글 고정, 답변 채택, 인피니티스크롤, 사진 업로드
-- 사용자 기능: 유저간 팔로잉 팔로우, 그룹채팅
-- 실시간 푸쉬 알림기능
+**본인이 기여한 부분**
+
+- [💅 기획 및 전반적인 UI 디자인 (Figma)](https://www.figma.com/file/qCGmL2FAXsLkg99bBHilHW/%EB%A7%88%EC%9D%B4-%EB%A6%AC%ED%8B%80%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8?type=design&mode=design)
+- [검색 및 필터 기능](https://www.notion.so/2ac997bb33ff41c4b7be944e696b5950?pvs=21)
+- [커뮤니티](https://www.notion.so/206778009c034745954b3851610fcfda?pvs=21)
+- [유저 간 실시간 채팅](https://www.notion.so/1c80a978b4dd47268a29568383a6410b?pvs=21)
+- [이미지 업로드](https://www.notion.so/5604c54a7d784cfba53881f0f7fc5bfc?pvs=21)
+- [실시간 알림 기능](https://www.notion.so/110ff4a4df7841819f34ac07923d2fb3?pvs=21)
+- [Github OAuth2.0 소셜 로그인](https://www.notion.so/Github-OAuth2-0-79f4e7bdaa8f49f5b8653e9bd73fd53c?pvs=21)
+- [JWT를 이용한 사용자 인증](https://www.notion.so/JWT-68aeeac456054aa995a4208d15c9e2cb?pvs=21)
+
+**트러블슈팅 및 배운점**
+
+- [렌더링 최적화](https://www.notion.so/36f7cb810bf64b159bdf26cd3b6042c8?pvs=21)
+- [이미지 최적화](https://www.notion.so/2fdd2c7e182f499fadc1381fc8ed3d28?pvs=21)
+- [jwt토큰이 들어오기전 일어나는 api 호출](https://www.notion.so/jwt-api-a46991c19f77480ebb3b61327cf2e366?pvs=21)
+- [ likeCount 실시간 반영](https://www.notion.so/likeCount-1f7dd71162224a7783a808c24ef3765d?pvs=21)
+- [테마변경 후, 새로고침시 깜빡임](https://www.notion.so/f75a51f11207447491cb92be286a78cd?pvs=21)
+- [텍스트 및 이미지 파일 formData 전송](https://www.notion.so/formData-d8ff918f59fc43bea3025903fea624fc?pvs=21)
+- [파일 업로드 로딩상태 처리](https://www.notion.so/512d291c2cbc4836a16f466f59f3f48e?pvs=21)
+- [Infinity Scroll](https://www.notion.so/Infinity-Scroll-2a52bcc5ba1c4fe3817490ab3ebd026f?pvs=21)
 
 
 
@@ -73,19 +81,6 @@
   - Tailwind CSS
   - framer-motion
   - headlessui
-
-
-### CI / CD
-
-- Deploy
-    - Vercel
-    - Docker
-    - Cloud Service  : Google Cloud Platform
-    - Jenkins
-- Communication
-    - Slack
-    - Github
-    
 
 ### 📋 ERD
 
