@@ -34,11 +34,11 @@ export default function SendMail() {
       {banner && banner.state !== 'loading' && <div className={`my-2 rounded-lg ${banner.state === 'success' ? 'bg-green-300' : 'bg-red-200'} p-2 font-semibold`}>{banner.message}</div>}
       {banner && banner.state === 'loading' && <div className={`my-2 rounded-lg bg-yellow-300 p-2 font-semibold`}>{banner.message}</div>}
       <div className=" font-semibold">Your Email</div>
-      <input placeholder="yourEmail@gmail.com(필수)" type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
+      <input type={'email'} value={mailData.from} onChange={(e) => setMailData({ ...mailData, from: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className=" font-semibold">Title</div>
-      <input placeholder="제목을 입력해주세요(필수)" type={'text'} value={mailData.subject} onChange={(e) => setMailData({ ...mailData, subject: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
+      <input type={'text'} value={mailData.subject} onChange={(e) => setMailData({ ...mailData, subject: e.target.value })} className="mb-2 w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className=" font-semibold">Message</div>
-      <textarea name="message" placeholder="보내질 메세지를 입력해주세요(필수)" value={mailData.message} onChange={(e) => setMailData({ ...mailData, message: e.target.value })} className="mb-2 h-[200px] w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
+      <textarea name="message" value={mailData.message} onChange={(e) => setMailData({ ...mailData, message: e.target.value })} className="mb-2 h-[200px] w-full rounded p-2 placeholder:text-neutral-600 focus:outline-none dark:text-neutral-900" />
       <div className="flex justify-end">
         <button disabled={mailData.from.length === 0 || mailData.message.trim().length === 0 || mailData.subject.trim().length === 0} onClick={onClickHandler} className="w-[100px] rounded-lg bg-neutral-50 py-2 text-center text-[18px] font-semibold disabled:opacity-50 dark:bg-neutral-600">
           Send

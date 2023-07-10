@@ -1,5 +1,3 @@
-# Kodistagram 개발 로그 및 트러블슈팅(노션 링크)🔥
-
 ✅ **배포 링크** : [kodistagram-nextjs.vercel.app](https://kodistagram-nextjs.vercel.app)
 
 ✅ **깃허브 링크** : [github.com/KodywiththeK/Kodistagram-Nextjs](https://github.com/KodywiththeK/Kodistagram-Nextjs)

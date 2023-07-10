@@ -20,12 +20,17 @@ export default function FilteredProjects({ projects }: FilterPropsType) {
 
   return (
     <>
-      <div className="mb-8 flex flex-wrap gap-2">
-        {categories.map((category, index) => (
-          <button onClick={() => onClickHandler(category)} key={index} className={`${filter.includes(category) ? 'bg-neutral-400 dark:bg-neutral-400' : 'bg-neutral-200 dark:bg-neutral-700'} rounded-xl  px-3 py-1.5 font-semibold transition-all hover:bg-neutral-200  dark:hover:bg-neutral-700`}>
-            {category}
-          </button>
-        ))}
+      <div className="mb-8 flex items-start justify-between gap-6 rounded-lg border p-4">
+        <div className="flex flex-wrap gap-2">
+          {categories.map((category, index) => (
+            <button onClick={() => onClickHandler(category)} key={index} className={`${filter.includes(category) ? 'bg-neutral-400 dark:bg-neutral-400' : 'bg-neutral-200 dark:bg-neutral-700'} rounded-xl  px-3 py-1.5 font-semibold transition-all hover:bg-neutral-200  dark:hover:bg-neutral-700`}>
+              {category}
+            </button>
+          ))}
+        </div>
+        <button onClick={() => setFilter([])} className="w-[100px] rounded-xl bg-neutral-400 p-2 font-semibold dark:bg-neutral-500">
+          Clear Filter
+        </button>
       </div>
       <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
         {result.map((project: ProjectType) => (

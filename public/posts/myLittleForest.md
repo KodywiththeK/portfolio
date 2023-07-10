@@ -38,24 +38,24 @@
 **본인이 기여한 부분**
 
 - [💅 기획 및 전반적인 UI 디자인 (Figma)](https://www.figma.com/file/qCGmL2FAXsLkg99bBHilHW/%EB%A7%88%EC%9D%B4-%EB%A6%AC%ED%8B%80%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8?type=design&mode=design)
-- [검색 및 필터 기능](https://www.notion.so/2ac997bb33ff41c4b7be944e696b5950?pvs=21)
-- [커뮤니티](https://www.notion.so/206778009c034745954b3851610fcfda?pvs=21)
-- [유저 간 실시간 채팅](https://www.notion.so/1c80a978b4dd47268a29568383a6410b?pvs=21)
-- [이미지 업로드](https://www.notion.so/5604c54a7d784cfba53881f0f7fc5bfc?pvs=21)
-- [실시간 알림 기능](https://www.notion.so/110ff4a4df7841819f34ac07923d2fb3?pvs=21)
-- [Github OAuth2.0 소셜 로그인](https://www.notion.so/Github-OAuth2-0-79f4e7bdaa8f49f5b8653e9bd73fd53c?pvs=21)
-- [JWT를 이용한 사용자 인증](https://www.notion.so/JWT-68aeeac456054aa995a4208d15c9e2cb?pvs=21)
+- [검색 및 필터 기능](https://invented-song-ea3.notion.site/0a26367d5ecd412a9257d172961c5907?pvs=4)
+- [커뮤니티](https://invented-song-ea3.notion.site/ff7733c4e39e453a89b970147c7934a8?pvs=4)
+- [유저 간 실시간 채팅](https://invented-song-ea3.notion.site/4b46ec1ee0a14f7fb73bded899a08bf4?pvs=4)
+- [이미지 업로드](https://invented-song-ea3.notion.site/49417829116340fe89b041973edff4ef?pvs=4)
+- [실시간 알림 기능](https://invented-song-ea3.notion.site/40df006d4bab40028875f0d19c341324?pvs=4)
+- [Github OAuth2.0 소셜 로그인](https://invented-song-ea3.notion.site/Github-OAuth2-0-0c45a56abb6a4e67870016723ca9390a?pvs=4)
+- [JWT를 이용한 사용자 인증](https://invented-song-ea3.notion.site/JWT-2173cf7465ad4cadae2ae54304c6ea1b?pvs=4)
 
 **트러블슈팅 및 배운점**
 
-- [렌더링 최적화](https://www.notion.so/36f7cb810bf64b159bdf26cd3b6042c8?pvs=21)
-- [이미지 최적화](https://www.notion.so/2fdd2c7e182f499fadc1381fc8ed3d28?pvs=21)
-- [jwt토큰이 들어오기전 일어나는 api 호출](https://www.notion.so/jwt-api-a46991c19f77480ebb3b61327cf2e366?pvs=21)
-- [ likeCount 실시간 반영](https://www.notion.so/likeCount-1f7dd71162224a7783a808c24ef3765d?pvs=21)
-- [테마변경 후, 새로고침시 깜빡임](https://www.notion.so/f75a51f11207447491cb92be286a78cd?pvs=21)
-- [텍스트 및 이미지 파일 formData 전송](https://www.notion.so/formData-d8ff918f59fc43bea3025903fea624fc?pvs=21)
-- [파일 업로드 로딩상태 처리](https://www.notion.so/512d291c2cbc4836a16f466f59f3f48e?pvs=21)
-- [Infinity Scroll](https://www.notion.so/Infinity-Scroll-2a52bcc5ba1c4fe3817490ab3ebd026f?pvs=21)
+- [렌더링 최적화](https://invented-song-ea3.notion.site/58790de1301347d7bfd672d8da424a45?pvs=4)
+- [이미지 최적화](https://invented-song-ea3.notion.site/56383411adf7431898c24566de19ffba?pvs=4)
+- [jwt토큰이 들어오기전 일어나는 api 호출](https://invented-song-ea3.notion.site/jwt-api-40056b0ec1954afc8aa192c75a0d7221?pvs=4)
+- [ likeCount 실시간 반영](https://invented-song-ea3.notion.site/likeCount-3ea4733d16fc424c8ca0a20d904baf6c?pvs=4)
+- [테마변경 후, 새로고침시 깜빡임](https://invented-song-ea3.notion.site/735a2227b2924f96a70ef36bdd0a44f6?pvs=4)
+- [텍스트 및 이미지 파일 formData 전송](https://invented-song-ea3.notion.site/formData-486786b56f7c42dcb46f4ededeb12d8f?pvs=4)
+- [파일 업로드 로딩상태 처리](https://invented-song-ea3.notion.site/301cfe184a6e4f6fb37bd163f56feb6f?pvs=4)
+- [Infinity Scroll](https://invented-song-ea3.notion.site/Infinity-Scroll-0df4ea7207424019b26dc2c90b26b2cb?pvs=4)
 
 
 

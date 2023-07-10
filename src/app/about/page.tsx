@@ -45,8 +45,8 @@ export default function AboutPage() {
         <hr />
         <h3 className="inline-block rounded-lg bg-slate-200 p-1 text-[18px] font-semibold text-black">적극적인 자세로 문제를 해결하는 개발자입니다.</h3>
         <div className="flex flex-col gap-2">
-          <p>최근 협업 프로젝트에서 Github Oauth 및 JWT 토큰 발행을 담당하던 백엔드 동료 파트 기능로 일정이 지연되고 있었습니다. 다들 본인의 파트가 아닌 탓에 도움이되지 못했고 나서는 사람도 없었습니다. 저는 더이상 지체되어서는 안될것 같다는 마음에, 자진해서 나서서 담당 동료분과 온라인으로 회의하며 함께 방법을 모색했습니다.</p>
-          <p>물론 백엔드에 대한 이해는 부족했지만, 유튜브나 블로그를 검색하며 무작정 찾았고, node.js로된 한 솔루션을 보고 무작정 따라해 Oauth를 구현했고 github API를 받는데 성공했습니다. 동료에게 해당 방법이 Spring에서도 적용 가능할지 물어보며 방법을 제안했고, 적용 가능하다는 것을 확인했습니다. 결국 문제를 기한 내에 해결하고 프로젝트를 잘 마무리했던 경험이 있습니다.</p>
+          <p>최근 협업 프로젝트에서 Github Oauth 및 JWT 토큰 발행을 담당하던 백엔드 동료 파트의 기능 문제로 일정이 지연되고 있었습니다. 다들 본인의 파트가 아닌 탓에 도움이되지 못했고 나서는 사람도 없었습니다. 저는 더이상 지체되어서는 안될것 같다는 마음에, 자진해서 나서서 담당 동료분과 온라인으로 회의하며 함께 방법을 모색했습니다. </p>
+          <p>물론 백엔드에 대한 이해는 부족했지만, 유튜브나 블로그를 검색하며 함께 고민했습니다. node.js로된 한 솔루션을 찾아, 무작정 따라해보며 Oauth를 구현했고, github API를 받는 로직 구현에 성공했습니다. 동료에게 해당 방법이 Spring에서도 적용 가능할지 물어보며 방법을 제안했고, 가능하다는 결론과 함께, 결국 문제를 기한 내에 해결하고 프로젝트를 잘 마무리할 수 있었던 경험이 있습니다.</p>
           <p className="mb-3">
             그 과정에서 백엔드단에서 Oauth가 구현되는 과정과 흐름에 대해서 조금이나마 경험해볼 수 있었고, 시야를 넓히고, 스스로 더 발전할 수 있는 기회를 만들었습니다. 이렇게 <b>저는 환경이 꾸려지기만을 기다리는 것이 아닌, 제 기회와 환경을 스스로 만들어갑니다. 가만히 서있기보다는 적극적인 자세로, 처한 위치나 환경에 상관없이 계속 한걸음씩이라도 앞으로 나아가려고 노력하는 개발자</b>입니다.
           </p>
@@ -67,8 +67,8 @@ export default function AboutPage() {
       <div className="flex flex-col gap-3">
         <h2 className="font-serif text-[22px] font-bold text-black dark:text-white">🔥 Experience</h2>
         <hr />
-        <h3 className="text-[18px] font-semibold text-black">제로베이스 프론트엔드 스쿨 9기</h3>
-        <p className="text-[14px] leading-4 text-slate-500">2022.11.01 ~ 2023.05.03</p>
+        <h3 className="text-[18px] font-semibold">제로베이스 프론트엔드 스쿨 9기</h3>
+        <p className="text-[14px] leading-4 text-slate-500 dark:text-slate-400">2022.11.01 ~ 2023.05.03</p>
         <ul className="prose prose-neutral dark:prose-invert flex flex-col gap-1 text-neutral-800 dark:text-neutral-200">
           <li className="flex">
             <div className="mr-2">{'•'}</div>
