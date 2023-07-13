@@ -33,6 +33,12 @@ export default function NavigationBar() {
             {pathname.includes('/projects') && <div className="absolute inset-0 z-[-1] rounded-md bg-neutral-200 dark:bg-neutral-700"></div>}
           </span>
         </Link>
+        <Link href={'/guestbook'} className="flex rounded align-middle font-bold transition-all">
+          <span className="relative px-[10px] py-[5px] opacity-60 transition-all hover:opacity-100">
+            guest
+            {pathname === '/guestbook' && <div className="absolute inset-0 z-[-1] rounded-md bg-neutral-200 dark:bg-neutral-700"></div>}
+          </span>
+        </Link>
       </div>
     </nav>
   )
