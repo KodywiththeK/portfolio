@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import NavigationBar from '@/components/NavigationBar'
+import { AuthContext } from '@/context/AuthContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,7 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <NavigationBar />
           </div>
         </aside>
-        <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:mt-0 md:px-0">{children}</main>
+        <AuthContext>
+          <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:mt-0 md:px-0">{children}</main>
+        </AuthContext>
       </body>
     </html>
   )
