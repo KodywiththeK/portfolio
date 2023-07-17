@@ -1,17 +1,32 @@
 import { client } from './sanity'
 
-export async function addComment(postId: string, comment: string) {
+export async function addComment(username: string, comment: string) {
+  return client.create(
+    {
+      _type: 'comment',
+      author: username,
+      text: comment,
+    },
+    { autoGenerateArrayKeys: true }
+  )
+}
+
+export async function getComments() {
+  return client.fetch(
+    `*[_type == "comment"] {
+      ...,
+      "createdAt":_createdAt
+    }| order(_createdAt desc)`
+  )
+}
+
+export async function deleteComment(id: string) {
   return client
-    .patch(postId)
-    .setIfMissing({ comments: [] })
-    .append('comments', [
-      {
-        _type: 'comment',
-        author: {
-          _type: 'reference',
-        },
-        comment: comment,
-      },
-    ])
-    .commit({ autoGenerateArrayKeys: true })
+    .delete({ query: `*[_type == "comment" && _id == "${id}"][0]` })
+    .then(() => {
+      console.log(`${id} deleted`)
+    })
+    .catch((err) => {
+      console.error('Delete failed: ', err.message)
+    })
 }
