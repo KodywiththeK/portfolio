@@ -9,11 +9,14 @@ export default function GuestbookInput() {
   const router = useRouter()
 
   const [comment, setComment] = useState('')
-  const [_, startTransition] = useTransition()
+  const [isPending, startTransition] = useTransition()
+  const [isLoading, setIsLoading] = useState(false)
+  const loading = isPending || isLoading
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement | HTMLInputElement>) => {
     e.preventDefault()
     e.stopPropagation()
     try {
+      setIsLoading(true)
       await fetch('/api/comment', {
         method: 'POST',
         body: JSON.stringify({
@@ -21,6 +24,7 @@ export default function GuestbookInput() {
           comment: comment,
         }),
       })
+      setIsLoading(false)
       startTransition(() => {
         router.refresh()
       })
@@ -34,7 +38,7 @@ export default function GuestbookInput() {
   return (
     <form className="my-4 flex w-full gap-2" onSubmit={(e) => handleSubmit(e)}>
       <input value={comment} required onChange={(e) => setComment(e.target.value)} className="w-1/2 min-w-[300px] rounded p-2 outline-none" placeholder="Add comment..." />
-      <button type="submit" className="rounded bg-slate-300 px-3 py-1">
+      <button disabled={loading} type="submit" className="rounded bg-slate-300 px-3 py-1 disabled:bg-slate-200">
         Post
       </button>
     </form>

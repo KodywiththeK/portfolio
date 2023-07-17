@@ -1,4 +1,4 @@
-import { addComment, deleteComment, getComments } from '@/service/comments'
+import { addComment, deleteComment } from '@/service/comments'
 import { getServerSession } from 'next-auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { authOptions } from '../auth/[...nextauth]/route'
