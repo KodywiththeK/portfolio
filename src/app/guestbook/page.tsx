@@ -1,3 +1,4 @@
+import GuestbookInput from '@/components/GuestbookInput'
 import LogInLogOut from '@/components/LogInLogOut'
 import SignInButton from '@/components/SignInButton'
 import { getProviders } from 'next-auth/react'
@@ -10,6 +11,7 @@ export default async function GuestPage() {
     <>
       <h1 className="mb-8 font-serif text-3xl font-bold">Sign my guestbook</h1>
       <LogInLogOut providers={providers} />
+      <GuestbookInput />
     </>
   )
 }

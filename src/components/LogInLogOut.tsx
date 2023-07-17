@@ -9,6 +9,7 @@ export default function LogInLogOut({ providers }: { providers: Record<string, C
     <>
       {session ? (
         <button
+          className="flex"
           onClick={() => {
             confirm('로그아웃 하시겠습니까?') && signOut()
           }}
