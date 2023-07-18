@@ -4,6 +4,33 @@ export default function AboutPage() {
   return (
     <section className="flex flex-col gap-8">
       <h1 className="font-serif text-3xl font-bold text-black dark:text-white">About Me</h1>
+      <h2 className="text-xl font-semibold">안녕하세요, 프론트엔드 개발자 김동성입니다.</h2>
+      <ul className="prose prose-neutral dark:prose-invert flex flex-col gap-2 text-neutral-800 dark:text-neutral-200">
+        <li className="flex">
+          <div className="mr-2">{'•'}</div>
+          <div>
+            {'주로'} <b>{'리액트와 타입스크립트'}</b>를 기반으로 개발하며, 다양한 사람들과 함께 <b>소통하며 작업하는 것</b>을 좋아합니다.
+          </div>
+        </li>
+        <li className="flex">
+          <div className="mr-2">{'•'}</div>
+          <div>
+            <b>주변의 다양한 문제를 능동적으로 해결하고 싶은 마음</b>에 개발자가 되었습니다. 아이디어만 있다면 생각하는 모든것을 펼칠 수 있는 이곳에서, 언젠가 저만의 세상을 그려내고 싶습니다. <b>좋은 기술로서 사람이 서로 돕는 문화를 만들어가는 것</b>이 제가 꿈꾸는 개발자로서의 삶입니다.
+          </div>
+        </li>
+        <li className="flex">
+          <div className="mr-2">{'•'}</div>
+          <div>
+            꾸준한 개발과 성장 습관을 만들기 위해 알고리즘, 프로젝트 등 스터디를 운영 및 참여하며 <b>학습 해야하는 환경과 성장할 수 있는 기회를 스스로 만들어갑니다.</b>
+          </div>
+        </li>
+        <li className="flex">
+          <div className="mr-2">{'•'}</div>
+          <div>
+            <b>사용자에게 좋은 가치와 경험을 전달하는 일에 큰 보람을 느낍니다.</b> 항상 사용자 경험에대해 중요히 생각하고, 더 나아가 그것이 우리의 일상에 미칠 영향력까지 고려할 줄 아는 개발자가 되고자합니다.
+          </div>
+        </li>
+      </ul>
       <div className="flex flex-col gap-3">
         <h2 className="font-serif text-[22px] font-bold text-black dark:text-white">⚒️ Dev Skills</h2>
         <hr />
@@ -57,8 +84,8 @@ export default function AboutPage() {
           사용자에게 다가가고자 하는 마음과 크게 다르지 않다고 생각합니다.{' '}
         </p>
         <p>
-          개발자로서 인문학적 사고가 중요한 이유는, 개발자가 만드는 가치를 완성시키는 것은 곧 사람이기 때문입니다. 개발자가 다루는 것이 비록 0과 1, 그리고 직선, 이성적인 것들일지라 해도, 우리가 만나야하는 사람은 결국 예측불가능한 아날로그적 감정으로 뭉친 곡선의 존재입니다. 인문학적 사고는 기술 개발에 사람 중심의 관점을 가져오고, 사회적으로 책임있는 기술을 만들게 해주기 때문에 개발자로서 중요한
-          소양이라 생각합니다.
+          개발자로서 인문학적 사고가 중요한 이유는, <b>개발자가 만드는 가치를 완성시키는 것은 곧 사람이기 때문</b>입니다. 개발자가 다루는 것이 비록 0과 1, 그리고 직선의 이성적인 것들일지라 해도, 우리가 만나야하는 사람은 결국 감정으로 뭉친 곡선의 존재입니다. 인문학적 사고는 기술 개발에 사람 중심의 관점을 가져오고, 사회적으로 책임있는 기술을 만들게 해주기 때문에 개발자로서 중요한 소양이라
+          생각합니다.
         </p>
         <p>
           저의 습관처럼 자리잡은 이러한 관점을 개발자로서 저만의 장점으로 만들어 적용해보려 합니다. <b>기술적인 사고와 더불어 더 깊고 의미있는 수준에서 사용자와 공감할 수 있는 기술을 만드는 개발자로서 성장하고 싶습니다.</b>
